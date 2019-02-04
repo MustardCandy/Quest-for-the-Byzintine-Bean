@@ -1,3 +1,5 @@
+//map creates a map for everything
+//needs number, element, name
 function map(number, element, name){
   var number = number;
   var gridArray = [];
