@@ -1,4 +1,4 @@
-class Base {
+class Basic{
   constructor(name,health,posX,posY,Damage) {
     this._name = name;
     this._health = health;
@@ -24,7 +24,7 @@ class Base {
   set posX(posX){
     this._posX = posX;
   }
-  get posY){
+  get posY(){
     return this._posy;
   }
   set posX(posY){
