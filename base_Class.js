@@ -4,7 +4,11 @@ class Basic {
     this._health = health;
     this._damage = damage;
   }
+<<<<<<< HEAD
   toString(){return this._name}
+=======
+
+>>>>>>> 8c45f44904476e57e851dafcf1705ca5c725546e
   get name(){
     return this._name;
   }
@@ -16,7 +20,11 @@ class Basic {
   get health(){
     return this._health;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 8c45f44904476e57e851dafcf1705ca5c725546e
   set health(health){
     this._health = health;
   }
