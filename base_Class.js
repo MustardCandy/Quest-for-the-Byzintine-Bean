@@ -1,9 +1,7 @@
-class Basic{
-  constructor(name,health,posX,posY,damage) {
+class Basic {
+  constructor(name,health,damage) {
     this._name = name;
     this._health = health;
-    this._posX = posX;
-    this._posY = posY;
     this._damage = damage;
   }
 
