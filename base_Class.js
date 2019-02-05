@@ -4,7 +4,7 @@ class Basic {
     this._health = health;
     this._damage = damage;
   }
-
+  toString(){return this._name}
   get name(){
     return this._name;
   }
@@ -16,7 +16,7 @@ class Basic {
   get health(){
     return this._health;
   }
-  
+
   set health(health){
     this._health = health;
   }
