@@ -2,8 +2,8 @@
 var wall = new Wall("#");
 
 //map is the grid that is created
-var map = grid(30, "#");
 
+var map = grid(30, Wall, "#");
 //map creates a map for everything
 //needs number, element, name
 function grid(number, element, name){
@@ -54,3 +54,8 @@ function draw(grid){
 
   return borderType; //return all of the borderType
 }
+document.getElementById("button1")
+
+
+/**********************suedo code*********************************************/
+//map will need double for loop
