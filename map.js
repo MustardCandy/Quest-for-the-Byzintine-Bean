@@ -1,4 +1,8 @@
-var map = grid(30, ".")
+//var that creates walls
+var wall = new Wall("#");
+
+//map is the grid that is created
+var map = grid(30, "#");
 
 //map creates a map for everything
 //needs number, element, name

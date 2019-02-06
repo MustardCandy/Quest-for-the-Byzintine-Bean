@@ -3,8 +3,6 @@ class Basic {
     this._name = name;
     this._health = health;
     this._damage = damage;
-  //  this._posX = posX;
-//    this.posY = posY;
   }
 
   toString(){
