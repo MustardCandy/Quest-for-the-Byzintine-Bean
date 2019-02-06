@@ -1,61 +1,74 @@
-//var that creates walls
-var wall = new Wall("#");
 
-//map is the grid that is created
 
-var map = grid(30, Wall, "#");
-//map creates a map for everything
-//needs number, element, name
-function grid(number, element, name){
-  var number = number;
-  var gridArray = [];
-   for (var i = 0; i < number; i++) {
-         gridArray[i] = [];
-     for (var j = 0; j < number; j++) {
-       gridArray[i][j] = new element(name, [i,j]);
-     }
+  function myTimer(){
+    update(grid)
   }
-  return gridArray;
-}
+  function grid(number, element, name = "#"){
+    var number = number;
+    var returnz = [];
+    for (var i = 0; i < number; i++) {
+      returnz.push([]);
+    for (var j = 0; j < number; j++) {
+      returnz[i].push(new element(name,[i,j]));
+    }
+  }
+  return returnz;
+  }
 
-function draw(grid){
-    var borderType = ""; //borderType
-
-    var gridLength = grid.length;
-
-    borderType += "+"; //corner
+function update(){
+  for (var i = 0; i < grid.length; i++) {
+    for (var j = 0; j < grid.length; j++) {
+      grid[i][j].haveMoved = false;
+      grid[i][j].haveBreed = false;
+    }
+  }
 
   for (var i = 0; i < grid.length; i++) {
-      borderType += "--"; //border
+    for (var j = 0; j < grid.length; j++) {
+      var gridXY = grid[i][j];
+      gridXY.move(grid);
+      gridXY.breed(grid);
     }
-
-    borderType += "+"; //corner
-
-    borderType += "<br>"; //break used
-
-    for (i = 0; i < gridLength; i++) {
-      borderType += "|" //border
-
-      for (j = 0; j < gridLength; j++) {
-        borderType += " " + grid[i][j]; //spaces
-      }
-
-      borderType += "|" + "<br>"; //border and break
-    }
-
-    borderType += "+"; //corner
-    for (var i = 0; i < grid.length; i++) {
-        borderType += "~~"; //border
-      }
-
-      borderType += "+"; //corner
-
-      borderType += "<br>"; //break
-
-  return borderType; //return all of the borderType
+  }
+  document.getElementById("blah").innerHTML = draw(grid);
 }
-document.getElementById("button1")
 
 
-/**********************suedo code*********************************************/
-//map will need double for loop
+function draw(grid){
+  //draws the orginal grid full of the default people class
+  var str = "";
+  var notkewl = grid.length;
+  var top = notkewl *2;
+    str += "+";
+  for (var i = 0; i < notkewl; i++) {
+    top = str += "--";
+}
+  str += "+<BR>";
+  for (var i = 0; i < notkewl; i++) {
+    str += "| ";
+  for (var j = 0; j < notkewl; j++) {
+      grid[i][j];
+      str += " " + grid[i][j];
+}
+
+    str += "|<BR>";
+}
+
+  str += "+";
+  for (var i = 0; i < notkewl; i++) {
+    top = str += "--";
+}
+
+  str += "+";
+  return str;
+}
+  var grid = grid(30, Basic);
+
+  document.getElementById("paragraph").innerHTML = draw(grid);
+
+  //makes a timer that  upadtes the grid every 300 milisecounds
+  document.getElementById("button").onclick = function(){
+  document.getElementById("paragraph").innerHTML = draw(grid);
+myTimer();
+
+}
