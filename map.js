@@ -62,7 +62,7 @@ function draw(grid){
   str += "+";
   return str;
 }
-  var grid = grid(30, Basic);
+  var grid = grid(50 Basic);
 
   document.getElementById("paragraph").innerHTML = draw(grid);
 
