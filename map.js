@@ -1,4 +1,4 @@
-
+//this page creats the grid 
 
   function myTimer(){
     update(grid)
@@ -35,7 +35,7 @@ function update(){
 
 
 function draw(grid){
-  //draws the orginal grid full of the default people class
+  //draws the orginal grid full of the default Basic class
   var str = "";
   var notkewl = grid.length;
   var top = notkewl *2;
