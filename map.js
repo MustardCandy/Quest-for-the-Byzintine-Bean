@@ -1,4 +1,4 @@
-//this page creats the grid 
+//this page creats the grid
 
   function myTimer(){
     update(grid)
@@ -62,7 +62,7 @@ function draw(grid){
   str += "+";
   return str;
 }
-  var grid = grid(50 Basic);
+  var grid = grid(50, Basic);
 
   document.getElementById("paragraph").innerHTML = draw(grid);
 
