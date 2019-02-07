@@ -5,6 +5,10 @@
   }
 
   function grid(number, element, name = "#"){
+<<<<<<< HEAD
+=======
+
+>>>>>>> 91570c1d822c76b6acef2e1546af7b2c28d9de78
     var returnz = [];
     for (var i = 0; i < number[0]; i++) {
       returnz.push([]);
@@ -37,8 +41,12 @@ function update(){
 function draw(grid){
   //draws the orginal grid full of the default Basic class
   var str = "";
+  var kewl = grid[0].length;
   var notkewl = grid.length;
+<<<<<<< HEAD
   var kewl = grid[0].length
+=======
+>>>>>>> 91570c1d822c76b6acef2e1546af7b2c28d9de78
   var top = notkewl;
     str += "+";
   for (var i = 0; i < kewl; i++) {
@@ -49,7 +57,7 @@ function draw(grid){
     str += "| ";
   for (var j = 0; j < kewl; j++) {
       grid[i][j];
-      str += " " + grid[i][j];
+    str += " " + grid[i][j];
 }
 
     str += "|<BR>";
@@ -63,7 +71,11 @@ function draw(grid){
   str += "+";
   return str;
 }
+<<<<<<< HEAD
   var grid = grid([50, 100], Basic);
+=======
+  var grid = grid([50,100],Basic);
+>>>>>>> 91570c1d822c76b6acef2e1546af7b2c28d9de78
 
   document.getElementById("paragraph").innerHTML = draw(grid);
 
