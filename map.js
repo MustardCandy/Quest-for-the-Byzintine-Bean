@@ -1,14 +1,12 @@
 //this page creats the grid
+var grid = grid([50,100],Basic);
 
   function myTimer(){
     update(grid)
   }
 
   function grid(number, element, name = "#"){
-<<<<<<< HEAD
-=======
 
->>>>>>> 91570c1d822c76b6acef2e1546af7b2c28d9de78
     var returnz = [];
     for (var i = 0; i < number[0]; i++) {
       returnz.push([]);
@@ -19,7 +17,7 @@
   return returnz;
   }
 
-function update(){
+  function update(){
   for (var i = 0; i < grid.length; i++) {
     for (var j = 0; j < grid.length; j++) {
       grid[i][j].haveMoved = false;
@@ -37,16 +35,11 @@ function update(){
   document.getElementById("blah").innerHTML = draw(grid);
 }
 
-
-function draw(grid){
+  function draw(grid){
   //draws the orginal grid full of the default Basic class
   var str = "";
   var kewl = grid[0].length;
   var notkewl = grid.length;
-<<<<<<< HEAD
-  var kewl = grid[0].length
-=======
->>>>>>> 91570c1d822c76b6acef2e1546af7b2c28d9de78
   var top = notkewl;
     str += "+";
   for (var i = 0; i < kewl; i++) {
@@ -71,13 +64,10 @@ function draw(grid){
   str += "+";
   return str;
 }
-<<<<<<< HEAD
-  var grid = grid([50, 100], Basic);
-=======
-  var grid = grid([50,100],Basic);
->>>>>>> 91570c1d822c76b6acef2e1546af7b2c28d9de78
 
-  document.getElementById("paragraph").innerHTML = draw(grid);
+  function choose(grid){
+    
+  }
 
   //makes a timer that  upadtes the grid every 300 milisecounds
   document.getElementById("button").onclick = function(){
