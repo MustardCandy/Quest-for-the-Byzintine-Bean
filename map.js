@@ -4,11 +4,11 @@
     update(grid)
   }
   function grid(number, element, name = "#"){
-    var number = number;
+
     var returnz = [];
-    for (var i = 0; i < number; i++) {
+    for (var i = 0; i < number[0]; i++) {
       returnz.push([]);
-    for (var j = 0; j < number; j++) {
+    for (var j = 0; j < number[1]; j++) {
       returnz[i].push(new element(name,[i,j]));
     }
   }
@@ -37,32 +37,33 @@ function update(){
 function draw(grid){
   //draws the orginal grid full of the default Basic class
   var str = "";
+  var kewl = grid[0].length;
   var notkewl = grid.length;
-  var top = notkewl *2;
+  var top = notkewl;
     str += "+";
-  for (var i = 0; i < notkewl; i++) {
+  for (var i = 0; i < kewl; i++) {
     top = str += "--";
 }
   str += "+<BR>";
   for (var i = 0; i < notkewl; i++) {
     str += "| ";
-  for (var j = 0; j < notkewl; j++) {
+  for (var j = 0; j < kewl; j++) {
       grid[i][j];
-      str += " " + grid[i][j];
+    str += " " + grid[i][j];
 }
 
     str += "|<BR>";
 }
 
   str += "+";
-  for (var i = 0; i < notkewl; i++) {
+  for (var i = 0; i < kewl; i++) {
     top = str += "--";
 }
 
   str += "+";
   return str;
 }
-  var grid = grid(50, Basic);
+  var grid = grid([50,100],Basic);
 
   document.getElementById("paragraph").innerHTML = draw(grid);
 
