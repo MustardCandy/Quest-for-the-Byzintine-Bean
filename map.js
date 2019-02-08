@@ -62,7 +62,7 @@ var grid = grid([50,100],Basic);
   return str;
 }
 
-  function room(number, element, name=" "){
+  function grid(number, element, name="#"){
     var open = [];
     for (var i = 0; i < number[0]; i++) {
       open.push([]);
