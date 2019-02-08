@@ -7,10 +7,16 @@ class Hero extends Basic {
     this._vel[0,0]
   }
 }
-function stringCheck() {
-  if(str.includes(".")){
+
+function stringCheck(str) {
+  if(str.includes("&#x2009")){
     return true;
   }else{
     return false;
   }
-}
+
+  }
+  function possibleMoves(){
+
+
+  }
