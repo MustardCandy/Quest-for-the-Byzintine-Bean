@@ -1,10 +1,8 @@
 //creats the "hero" that players will control
 class Hero extends Basic {
-  constructor(posX,posY) {
+  constructor(location) {
     super("X",20,5)
-    this._posX = posX;
-    this._posY = posY;
-    this._vel[0,0]
+    this._location = location;
   }
 }
 
