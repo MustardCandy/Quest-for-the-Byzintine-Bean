@@ -7,6 +7,10 @@ class Hero extends Basic {
     this._vel[0,0]
   }
 }
-function clearSpots() {
-
+function stringCheck() {
+  if(str.includes(".")){
+    return true;
+  }else{
+    return false;
+  }
 }
