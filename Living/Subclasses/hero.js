@@ -4,5 +4,9 @@ class Hero extends Basic {
     super("X",20,5)
     this._posX = posX;
     this._posY = posY;
+    this._vel[0,0]
   }
+}
+function clearSpots() {
+
 }
