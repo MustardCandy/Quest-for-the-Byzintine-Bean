@@ -1,6 +1,6 @@
 //this page creats the grid
-var grid = grid([50,100],Basic);
-
+var map = grid([50,100],Basic);
+  preset(map)
 
   function myTimer(){
     update(grid)
@@ -72,12 +72,32 @@ var grid = grid([50,100],Basic);
     }
     return open;
   }
-  var room = room([50, 100], Basic);
 
-  document.getElementById("paragraph").innerHTML = draw(room);
+  function preset(grid){
+    var amount = grid.length;
+    var choices = [];
+
+    for (var i = 0; i < grid.length; i++) {
+      for (var j = 0; j < grid.length; j++) {
+        choices.push([i,j])
+      }
+    }
+    for (var i = 0; i < 150; i++) {
+      var ran = Math.floor(Math.random()* choices.length);
+      var cord = choices[ran];
+      choices.splice(ran,1);
+      grid[cord[0]][cord[1]] = new Hobbit(cord);
+    }
+    for (var i = 0; i < 10; i++) {
+      var ran = Math.floor(Math.random()* choices.length);
+      var cord = choices[ran];
+      choices.splice(ran,1);
+      grid[cord[0]][cord[1]] = new Nazgul(cord);
+    }
+  }
 
   //makes a timer that  upadtes the grid every 300 milisecounds
-document.getElementById("button").onclick = function(){
-  document.getElementById("paragraph").innerHTML = draw(grid);
+document.getElementById("button2").onclick = function(){
+  document.getElementById("paragraph").innerHTML = draw(map);
 myTimer();
 }
