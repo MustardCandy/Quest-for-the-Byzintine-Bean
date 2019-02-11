@@ -3,10 +3,9 @@ var map = grid([50,100],Basic);
 
 
   function myTimer(){
+    var grid = grid();
     update(grid)
   }
-
-  function grid(number, element, name ="#"){
 
     var returnz = [];
     for (var i = 0; i < number[0]; i++) {
@@ -19,6 +18,7 @@ var map = grid([50,100],Basic);
   }
 
   function update(){
+  var grid = grid();
   for (var i = 0; i < grid.length; i++) {
     for (var j = 0; j < grid.length; j++) {
       grid[i][j].haveMoved = false;
@@ -36,6 +36,7 @@ var map = grid([50,100],Basic);
 }
 
   function draw(grid){
+    var grid = grid();
   //draws the orginal grid full of the default Basic class
   var str = "";
   var kewl = grid[0].length;
