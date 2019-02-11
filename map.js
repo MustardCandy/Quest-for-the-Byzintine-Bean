@@ -1,7 +1,6 @@
 //this page creats the grid
 var map = grid([50,100],Basic);
 
-
   function myTimer(){
     update(grid)
   }
@@ -72,8 +71,6 @@ var map = grid([50,100],Basic);
     }
     return open;
   }
-
-
 
   //makes a timer that  upadtes the grid every 300 milisecounds
 document.getElementById("button2").onclick = function(){
