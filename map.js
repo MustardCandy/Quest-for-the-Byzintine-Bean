@@ -22,9 +22,11 @@ function draw(grid){
 
     var gridLength = grid.length;
 
+    var lengthGrid = grid[0].length;
+
     borderType += "+"; //corner
 
-  for (var i = 0; i < grid.length; i++) {
+  for (var i = 0; i < lengthGrid; i++) {
       borderType += "~~"; //border
     }
 
@@ -35,7 +37,7 @@ function draw(grid){
     for (i = 0; i < gridLength; i++) {
       borderType += "|" //border
 
-      for (j = 0; j < gridLength; j++) {
+      for (j = 0; j < lengthGrid; j++) {
         borderType += " " + grid[i][j]; //spaces
       }
 
@@ -43,7 +45,7 @@ function draw(grid){
     }
 
     borderType += "+"; //corner
-    for (var i = 0; i < grid.length; i++) {
+    for (var i = 0; i < lengthGrid; i++) {
         borderType += "~~"; //border
       }
 
