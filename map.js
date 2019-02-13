@@ -1,5 +1,5 @@
 //map is the grid that they are currently on
-var map = grid([20,100],Basic);
+var map = grid([50,100],Basic);
 
 document.getElementById("paragraph").innerHTML = draw(map);
 
