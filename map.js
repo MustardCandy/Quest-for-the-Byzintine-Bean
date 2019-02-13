@@ -1,6 +1,7 @@
 //map is the grid that they are currently on
-var map = grid([20,100],Basic);
+var map = grid([30,110],Basic);
 
+//drawing the map that with the x and y length
 document.getElementById("paragraph").innerHTML = draw(map);
 
 //grid is the grid the hobbits and nazguls live on
@@ -16,13 +17,24 @@ function grid(number, element, name="#"){
   return gridArray;
 }
 
+function room(number, element, name=" "){
+  var gridArray = [];
+   for (var i = 0; i < number[0]; i++) {
+         gridArray[i] = [];
+     for (var j = 0; j < number[1]; j++) {
+       gridArray[i][j] = new element(name, [i,j]);
+     }
+  }
+  return gridArray;
+}
+
 //draw creates the grid using characters and line breaks
 function draw(grid){
     var borderType = ""; //borderType
 
-    var gridLength = grid.length;
+    var gridLength = grid.length;//y length
 
-    var lengthGrid = grid[0].length;
+    var lengthGrid = grid[0].length;//x length
 
     borderType += "+"; //corner
 
@@ -58,7 +70,6 @@ function draw(grid){
 
 //button reset
 //re-draws grid
-document.getElementById("button1").onclick = function(){
+document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
-  console.log("Worked");
 }
