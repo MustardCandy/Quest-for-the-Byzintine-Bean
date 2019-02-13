@@ -1,12 +1,11 @@
 //map is the grid that they are currently on
-var map = grid([50,100],Basic);
+var map = grid([20,100],Basic);
 
 document.getElementById("paragraph").innerHTML = draw(map);
 
 //grid is the grid the hobbits and nazguls live on
 //needs number, elemnt, and a name
 function grid(number, element, name="#"){
-  var number = number;
   var gridArray = [];
    for (var i = 0; i < number[0]; i++) {
          gridArray[i] = [];
