@@ -1,4 +1,5 @@
-class Room extends Basic(){
+//a class to spawn in the rooms
+class Room extends Basic{
   constructor(location){
   super(" ");
   this._location = location;
