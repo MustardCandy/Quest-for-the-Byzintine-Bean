@@ -1,8 +1,32 @@
+class Room extends Basic{
+  constructor(location) {
+    super(" ");
+  }
 
+  //getters
+  get name(){
+    return this._name;
+  }
+  get location(){
+    return this._location;
+  }
+
+  //setters
+  set name(name){
+    this._location = location;
+  }
+  set location(location){
+    this._location = location;
+  }
+
+  //turn name to string
+  toString(){
+    return this._name;
+  }
+}
 
 //map is the grid that they are currently on
-
-var map = grid([50,100],Basic);
+var map = grid([44,130],Basic);
 
 //drawing the map that with the x and y length
 document.getElementById("paragraph").innerHTML = draw(map);
@@ -10,17 +34,6 @@ document.getElementById("paragraph").innerHTML = draw(map);
 //grid is the grid the hobbits and nazguls live on
 //needs number, elemnt, and a name
 function grid(number, element, name="#"){
-  var gridArray = [];
-   for (var i = 0; i < number[0]; i++) {
-         gridArray[i] = [];
-     for (var j = 0; j < number[1]; j++) {
-       gridArray[i][j] = new element(name, [i,j]);
-     }
-  }
-  return gridArray;
-}
-
-function room(number, element, name=" "){
   var gridArray = [];
    for (var i = 0; i < number[0]; i++) {
          gridArray[i] = [];
@@ -75,4 +88,10 @@ function draw(grid){
 //re-draws grid
 document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
+}
+
+for (var i = 0; i < array.length; i++) {
+  for (var j = 0; j < array.length; j++) {
+
+  }
 }
