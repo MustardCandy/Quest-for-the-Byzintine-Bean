@@ -1,4 +1,18 @@
+class Room extends Basic(){
+  constructor(location){
+  super(" ");
+  this._location = location;
+}
+get location(){
+  return this._location;
+}
+set location(location){
+  this._location = location;
+}
+}
+
 //map is the grid that they are currently on
+
 var map = grid([50,100],Basic);
 
 //drawing the map that with the x and y length
