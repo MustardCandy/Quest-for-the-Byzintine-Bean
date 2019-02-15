@@ -70,7 +70,7 @@ function draw(grid){
 
 //draw creates the grid using characters and line breaks
 
-document.getElementById("button2").onclick = function(){
+document.getElementById("button3").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(room);
 
 }
