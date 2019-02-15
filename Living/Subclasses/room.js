@@ -15,3 +15,9 @@ class Room extends Basic{
     this._location = location;
   }
 }
+
+for (var i = 0; i < array.length; i++) {
+  for (var j = 0; j < array.length; j++) {
+    
+  }
+}
