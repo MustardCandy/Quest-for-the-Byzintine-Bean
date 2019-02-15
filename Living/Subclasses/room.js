@@ -14,6 +14,8 @@ class Room extends Basic{
   set location(location){
     this._location = location;
   }
+<<<<<<< HEAD
+=======
 
 }
 var room = grid([20,10],Room);
@@ -70,7 +72,8 @@ function draw(grid){
 
 //draw creates the grid using characters and line breaks
 
-document.getElementById("button2").onclick = function(){
+document.getElementById("button3").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(room);
 
+>>>>>>> 48c2150149008133ecdcef27c94b8c704fb79b3f
 }
