@@ -1,5 +1,6 @@
 //map is the grid that they are currently on
-var map = grid([40,130],Basic);
+
+var map = grid([50,100],Basic);
 
 //drawing the map that with the x and y length
 document.getElementById("paragraph").innerHTML = draw(map);
@@ -16,6 +17,8 @@ function grid(number, element, name="#"){
   }
   return gridArray;
 }
+
+
 
 //draw creates the grid using characters and line breaks
 function draw(grid){
@@ -61,4 +64,5 @@ function draw(grid){
 //re-draws grid
 document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
+
 }
