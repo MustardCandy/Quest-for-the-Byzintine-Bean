@@ -15,10 +15,5 @@ class Room extends Basic{
     this._location = location;
   }
 
-  if (grid.x >= room.x && grid.x <= room.x + room.x) {
-    " ";
-  }
-  if (grid.y >= room.y && grid.y <= room.y + room.y) {
-    " ";
-  }
+
 }
