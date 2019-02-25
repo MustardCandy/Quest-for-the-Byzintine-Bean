@@ -18,8 +18,6 @@ function grid(number, element, name="#"){
   return gridArray;
 }
 
-
-
 //draw creates the grid using characters and line breaks
 function draw(grid){
     var borderType = ""; //borderType
@@ -64,5 +62,4 @@ function draw(grid){
 //re-draws grid
 document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
-
 }

@@ -1,3 +1,4 @@
+
 //a class to spawn in the rooms
 class Room extends Basic{
   constructor(location){
@@ -14,6 +15,11 @@ class Room extends Basic{
   set location(location){
     this._location = location;
   }
+}
+var roomz = grid([10],Room)
 
-
+function space (location){
+  if (map.x >= roomz.x && map.x <= roomz.x + roomz.length) {
+    " ";
+  }
 }
