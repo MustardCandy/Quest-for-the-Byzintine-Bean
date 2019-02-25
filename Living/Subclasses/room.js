@@ -15,11 +15,10 @@ class Room extends Basic{
     this._location = location;
   }
 
-for (var i = 0; i < grid.length; i++) {
-  grid[i]
-
-for (var j = 0; i < grid.length; j++) {
-  grid[j]
-}
-}
+  if (grid.x >= room.x && grid.x <= room.x + room.x) {
+    " ";
+  }
+  if (grid.y >= room.y && grid.y <= room.y + room.y) {
+    " ";
+  }
 }
