@@ -31,7 +31,7 @@ class Room extends Basic{
     this._location = location;
   }
 //the double for loop should it be grid?
-for (var i = 0; i < map.length; i++) {
+for(var i = 0; i < map.length; i++){
   grid[i]
 
 for (var j = 0; j < map.length; j++) {
