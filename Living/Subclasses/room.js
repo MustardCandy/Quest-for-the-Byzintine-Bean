@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> d77cb0cf6b6eb1f1be540ef203d2d2756383da0d
 //a class to spawn in the rooms
 class Room extends Basic{
   constructor(location){
@@ -15,11 +19,11 @@ class Room extends Basic{
   set location(location){
     this._location = location;
   }
+}
+var roomz = grid([10],Room)
 
-  if (grid.x >= room.x && grid.x <= room.x + room.x) {
-    " ";
-  }
-  if (grid.y >= room.y && grid.y <= room.y + room.y) {
+function space (location){
+  if (map.x >= roomz.x && map.x <= roomz.x + roomz.length) {
     " ";
   }
 }
