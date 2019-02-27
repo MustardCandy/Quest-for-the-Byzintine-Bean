@@ -18,8 +18,6 @@ function grid(number, element, name="#"){
   return gridArray;
 }
 
-
-
 //draw creates the grid using characters and line breaks
 function draw(grid){
     var borderType = ""; //borderType
@@ -65,4 +63,18 @@ function draw(grid){
 document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
 
+}
+
+var room = {x: 5, y: 5}
+
+function spacex (location){
+  if (grid.length >= room.length && grid <= room.length + room.length) {
+    " ";
+  }
+}
+
+function spacey (location){
+  if (grid.length >= room[0].length && grid <= room[0].length + room[0].length) {
+    " ";
+  }
 }
