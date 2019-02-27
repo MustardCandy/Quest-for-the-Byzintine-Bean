@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /*
-=======
-
->>>>>>> d77cb0cf6b6eb1f1be540ef203d2d2756383da0d
 //a class to spawn in the rooms
 class Room extends Basic{
   constructor(location){
