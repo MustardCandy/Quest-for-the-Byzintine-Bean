@@ -62,7 +62,6 @@ function draw(grid){
 //re-draws grid
 document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
-
 }
 
 var room = {x: 5, y: 5}
