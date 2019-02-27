@@ -1,4 +1,3 @@
-/*
 //a class to spawn in the rooms
 class Room extends Basic{
   constructor(location){
@@ -16,15 +15,40 @@ class Room extends Basic{
     this._location = location;
   }
 }
-var roomz = grid([10],Room)
 
-function space (location){
-  if (map.x >= roomz.x && map.x <= roomz.x + roomz.length) {
+function room (size, name = " "){
+  var area = [];
+for (var i = 0; i < size.x; i++) {
+  area.push([])
+  for (var j = 0; j < size.y; j++) {
+     area.push(name,[i,j]);
+      }
+    }
+    return area;
+  }
+
+function spacex (location){
+  if (grid.length >= room.length && grid <= room.length + room.length) {
     " ";
   }
 }
-*/
 
+function spacey (location){
+  if (grid[0].length >= room[0].length && grid <= room[0].length + room[0].length) {
+    " ";
+  }
+}
+
+var grid = grid({x:60,y:100}, Basic);
+var roomz = room({x:20,y:20});
+
+function drawroom(spacex, spacey){
+    roomx(map, roomz);
+    roomy(map);
+    draw(map);
+    return draw(map, roomz);
+  }
+/*
 function room (size,name = " "){
   var area = [];
 for (var i = 0; i < size.x; i++) {
@@ -36,14 +60,14 @@ for (var i = 0; i < size.x; i++) {
     return area;
   }
 
-  function roomx (room){
+function roomx (roomz){
     if(grid.length >= room.length && grid <= room.length + room.length){
             room = " ";
     }
     return room;
   }
 
-function roomy (room){
+function roomy (roomz){
    if(grid[0].length >= room[0].length && grid[0].length <= room[0].length + room.length){
            room[0].length = " ";
    }
@@ -51,16 +75,17 @@ function roomy (room){
  }
 
 function drawroom(roomx, roomy){
-    roomx(map, room);
+    roomx(map, roomz);
     draw(map);
     roomy(map);
-    return draw(map, room);
+    return draw(map, roomz);
   }
 
   var grid = grid({x:60,y:100}, Basic);
-  var room = room({x:20,y:20});
+  var roomz = room({x:20,y:20});
 
   document.getElementById("button2").onclick = function(){
     document.getElementById("paragraph").innerHTML = drawroom(roomx, roomy);
 
   }
+*/
