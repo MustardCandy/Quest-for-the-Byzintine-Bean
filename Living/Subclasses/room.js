@@ -1,12 +1,14 @@
 var room = {x: 5, y: 5}
 
 function spacex (location){
+  //space x lenghth
   if (grid.length >= room.x && map <= room.x + room.y) {
     " ";
   }
 }
 
 function spacey (location){
+  //for the spaces y coordes
   if (grid.length >= room.y && map <= room.y + room.y) {
     " ";
   }
@@ -28,7 +30,7 @@ class Room extends Basic{
   set location(location){
     this._location = location;
   }
-
+//the double for loop should it be grid?
 for (var i = 0; i < grid.length; i++) {
   grid[i]
 
