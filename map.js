@@ -64,17 +64,3 @@ document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
 
 }
-
-var room = {x: 5, y: 5}
-
-function spacex (location){
-  if (grid.length >= room.x && grid <= room.x + room.x) {
-    " ";
-  }
-}
-
-function spacey (location){
-  if (grid.length >= room.y && grid <= room.y + room.y) {
-    " ";
-  }
-}

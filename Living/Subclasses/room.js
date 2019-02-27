@@ -1,3 +1,17 @@
+var room = {x: 5, y: 5}
+
+function spacex (location){
+  if (grid.length >= room.x && map <= room.x + room.y) {
+    " ";
+  }
+}
+
+function spacey (location){
+  if (grid.length >= room.y && map <= room.y + room.y) {
+    " ";
+  }
+}
+
 //a class to spawn in the rooms
 class Room extends Basic{
   constructor(location){
