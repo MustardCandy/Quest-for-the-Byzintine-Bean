@@ -34,17 +34,16 @@ function spacex (location){
 }
 
 function spacey (location){
-  if (grid[0].length >= room[0].length && grid <= room[0].length + room[0].length) {
+  if (grid.length >= room[0].length && grid <= room[0].length + room[0].length) {
     " ";
   }
 }
 
-var grid = grid({x:60,y:100}, Basic);
-var roomz = room({x:20,y:20});
+var roomz = room([20,20]);
 
 function drawroom(spacex, spacey){
-    roomx(map, roomz);
-    roomy(map);
+    spacex(roomz);
+    spacey(roomz);
     draw(map);
     return draw(map, roomz);
   }
