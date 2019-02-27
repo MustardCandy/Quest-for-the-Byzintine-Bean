@@ -18,8 +18,6 @@ function grid(number, element, name="#"){
   return gridArray;
 }
 
-
-
 //draw creates the grid using characters and line breaks
 function draw(grid){
     var borderType = ""; //borderType
