@@ -48,15 +48,4 @@ class Room extends Basic{
   set location(location){
     this._location = location;
   }
-<<<<<<< HEAD
-//the double for loop should it be grid?
-for(var i = 0; i < map.length; i++){
-  grid[i]
-
-for (var j = 0; j < map.length; j++) {
-  grid[j]
-}
-}
-=======
->>>>>>> 3da51d3fdd71e8b5a834557013c52d733f5bf1c0
 }
