@@ -11,24 +11,22 @@ function room (size,name = " "){
   return aray;
 }
 
-function spacex (room){
+function spacexy (room){
   //space x length
   if (map.length >= roomz.x && map.length <= roomz.x + roomz.xLength) {
     " ";
+    console.log();
+  }
+    //for the spaces y coordes
+    if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
+      " ";
+      console.log();
   }
 }
 
-function spacey (room){
-  //for the spaces y coordes
-  if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
-    " ";
-  }
-}
-
-function drawSpace (spacex,spacey){
-  spacex(grid);
-  spacey(grid)
-  draw(spacex,spacey);
+function drawSpace (spacexy){
+  spacexy(grid);
+  draw(spacexy);
   return draw(grid,room);
 }
 
