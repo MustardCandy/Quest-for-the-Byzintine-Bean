@@ -1,5 +1,5 @@
 class Roomz {
-constructer(name,x, y, Xpos, ypos){
+constructer(name,x,y,Xpos,Ypos){
 this._name = this._name;
 this._x = this._x;
 this._y= this._y;
