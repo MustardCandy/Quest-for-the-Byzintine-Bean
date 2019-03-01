@@ -1,4 +1,12 @@
-var roomz = {x: 5, y: 5, xLength: 5, yLength: 5}
+class Roomz {
+constructer(name,x, y, Xpos, ypos){
+this._name = this._name;
+this._x = this._x;
+this._y= this._y;
+this.Xpos = this.Xpos;
+this._Ypos =this._Ypos ;
+}
+}
 
 function room (size,name = " "){
   var aray = []
@@ -31,11 +39,11 @@ function drawSpace (spacexy){
 }
 
 //a class to spawn in the rooms
-class Room extends Basic{
-  constructor(location){
-    super(" ");
-    this._location = location;
-  }
+// class Room extends Basic{
+//   constructor(location){
+//     super(" ");
+//     this._location = location;
+//   }
 
   //getters
   get location(){
