@@ -1,5 +1,5 @@
 class Roomz {
-constructer(name,x,y,Xpos,Ypos){
+constructor(name,x,y,Xpos,Ypos){
 this._name = this._name;
 this._x = this._x;
 this._y= this._y;
@@ -45,13 +45,13 @@ function drawSpace (spacexy){
 //     this._location = location;
 //   }
 
-  //getters
-  get location(){
-    return this._location;
-  }
-
-  //setters
-  set location(location){
-    this._location = location;
-  }
-}
+//   //getters
+//   get location(){
+//     return this._location;
+//   }
+//
+//   //setters
+//   set location(location){
+//     this._location = location;
+//   }
+// }
