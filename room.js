@@ -1,11 +1,11 @@
 class Roomz {
-constructor(name,x,y,Xpos,Ypos){
-this._name = this._name;
-this._x = this._x;
-this._y= this._y;
-this.Xpos = this.Xpos;
-this._Ypos =this._Ypos ;
-}
+  constructor(name,x,y,Xpos,Ypos){
+      this._name = this._name;
+      this._x = this._x;
+      this._y= this._y;
+      this.Xpos = this.Xpos;
+      this._Ypos =this._Ypos;
+  }
 }
 
 function room (size,name = " "){
@@ -25,10 +25,10 @@ function spacexy (room){
     " ";
     console.log();
   }
-    //for the spaces y coordes
-    if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
-      " ";
-      console.log();
+  //for the spaces y coordes
+  if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
+    " ";
+    console.log();
   }
 }
 
@@ -38,20 +38,18 @@ function drawSpace (spacexy){
   return draw(grid,room);
 }
 
-//a class to spawn in the rooms
+// a class to spawn in the rooms
 // class Room extends Basic{
 //   constructor(location){
 //     super(" ");
 //     this._location = location;
 //   }
 
-  //getters
-  get location(){
-    return this._location;
-  }
-
-  //setters
-  set location(location){
-this._location = location;
-  }
+//getters
+get location(){
+  return this._location;
+}
+//setters
+set location(location){
+  this._location = location;
 }
