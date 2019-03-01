@@ -1,10 +1,28 @@
 class Roomz {
-constructor(name,x,y,Xpos,Ypos){
-this._name = this._name;
-this._x = this._x;
-this._y= this._y;
-this.Xpos = this.Xpos;
-this._Ypos =this._Ypos ;
+  constructor(name = " ",x,y,Xpos,Ypos){
+    this._name = this._name;
+    this._x = this._x;
+    this._y= this._y;
+    this.Xpos = this.Xpos;
+    this._Ypos =this._Ypos ;
+  }
+  toString(){
+    return this._name
+  }
+set name(name){
+    this._name = name;
+}
+set x(x){
+  this._x = x;
+}
+set y(y){
+  this._y = y;
+}
+set Xpos(Xpos){
+  this._Xpos = Xpos;
+}
+set Ypos(Ypos){
+  this._Ypos = Ypos;
 }
 }
 
