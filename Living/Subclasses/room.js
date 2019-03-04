@@ -14,10 +14,10 @@ class Roomz {
 }
     set x(x){
       this._x = x;
-  }
+}
     set y(y){
       this._y = y;
-    }
+}
     set Xpos(Xpos){
       this._Xpos = Xpos;
 }
