@@ -41,21 +41,23 @@ class Roomz {
   }
 }
 
-var boon = {
-  x: 4, y: 6,
-  
-}
+var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
 
-function room (number, name = " "){
-  var aray = {}
-  for (var i = 0; i < number[0]; i++) {
-    for (var j = 0; j < number[1]; j++) {
-      aray.push([i,j]);
+function room (boon){
+  var retArr = [];
+  for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
+    for (var j = boon.yPos; j < boon.y + boon.yPos; j++) {
+      retArr.push([i,j]);
     }
   }
-  return aray;
+  return retArr;
 }
 
+function drawRoom (){
+  for (var i = 0; i < array.length; i++) {
+    array[i]
+  }
+}
 /*----------------------------- Old Attempts ---------------------------------*/
 
 // function spacexy (room){
