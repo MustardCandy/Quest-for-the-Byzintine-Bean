@@ -3,27 +3,42 @@ class Roomz {
     this._name = this._name;
     this._x = this._x;
     this._y= this._y;
-    this.Xpos = this.Xpos;
-    this._Ypos =this._Ypos ;
+    this._Xpos = this.Xpos;
+    this._Ypos = this._Ypos ;
   }
   toString(){
     return this._name
   }
-set name(name){
-    this._name = name;
+    set name(name){
+      this._name = name;
 }
-set x(x){
-  this._x = x;
+    set x(x){
+      this._x = x;
+  }
+    set y(y){
+      this._y = y;
+    }
+    set Xpos(Xpos){
+      this._Xpos = Xpos;
 }
-set y(y){
-  this._y = y;
+    set Ypos(Ypos){
+      this._Ypos = Ypos;
 }
-set Xpos(Xpos){
-  this._Xpos = Xpos;
+    get name(){
+     return this._name;
 }
-set Ypos(Ypos){
-  this._Ypos = Ypos;
+    get x(){
+      return this._x;
 }
+    get y(){
+        return this._y;
+}
+    get Xpos(){
+        return this._Xpos;
+}
+    get Ypos(){
+        return this._Ypos;
+  }
 }
 
 function room (size,name = " "){
