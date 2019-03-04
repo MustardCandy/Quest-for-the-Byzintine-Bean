@@ -41,8 +41,13 @@ class Roomz {
   }
 }
 
+var boon = {
+  x: 4, y: 6,
+  
+}
+
 function room (number, name = " "){
-  var aray = []
+  var aray = {}
   for (var i = 0; i < number[0]; i++) {
     for (var j = 0; j < number[1]; j++) {
       aray.push([i,j]);
@@ -51,22 +56,24 @@ function room (number, name = " "){
   return aray;
 }
 
-function spacexy (room){
-  //space x length
-  if (map.length >= roomz.x && map.length <= roomz.x + roomz.xLength) {
-    " ";
-  }
-    //for the spaces y coordes
-    if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
-      " ";
-  }
-}
+/*----------------------------- Old Attempts ---------------------------------*/
 
-function drawSpace (spacexy){
-  spacexy(grid);
-  draw(spacexy);
-  return draw(grid,room);
-}
+// function spacexy (room){
+  // space x length
+  // if (map.length >= roomz.x && map.length <= roomz.x + roomz.xLength) {
+    // " ";
+  // }
+    // for the spaces y coordes
+    // if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
+      // " ";
+  // }
+// }
+
+ // function drawSpace (spacexy){
+  // spacexy(grid);
+  // draw(spacexy);
+  // return draw(grid,room);
+// }
 
 //a class to spawn in the rooms
 // class Room extends Basic{
