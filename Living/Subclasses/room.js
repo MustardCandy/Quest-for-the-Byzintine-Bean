@@ -54,10 +54,13 @@ function room (boon){
 }
 
 function drawRoom (){
-  for (var i = 0; i < array.length; i++) {
-    array[i]
+  var retArr = [];
+  for (var i = 0; i < .length; i++) {
+    retArr.push([i]);
   }
+  return retArr;
 }
+
 /*----------------------------- Old Attempts ---------------------------------*/
 
 // function spacexy (room){
