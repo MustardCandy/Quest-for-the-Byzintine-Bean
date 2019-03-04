@@ -26,12 +26,11 @@ set Ypos(Ypos){
 }
 }
 
-function room (size,name = " "){
+function room (number, name = " "){
   var aray = []
-  for (var i = 0; i < size.x; i++) {
-    aray.push([]);
-    for (var j = 0; j < size.y; j++) {
-      aray.push(name,[i,j]);
+  for (var i = 0; i < number[0]; i++) {
+    for (var j = 0; j < number[1]; j++) {
+      aray.push([i,j]);
     }
   }
   return aray;
@@ -41,12 +40,10 @@ function spacexy (room){
   //space x length
   if (map.length >= roomz.x && map.length <= roomz.x + roomz.xLength) {
     " ";
-    console.log();
   }
     //for the spaces y coordes
     if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
       " ";
-      console.log();
   }
 }
 

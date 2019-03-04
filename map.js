@@ -1,5 +1,4 @@
 //map is the grid that they are currently on
-
 var map = grid([50,100],Basic);
 
 //drawing the map that with the x and y length
