@@ -9,55 +9,55 @@ class Roomz {
   toString(){
     return this._name
   }
-    set name(name){
-      this._name = name;
-}
-    set x(x){
-      this._x = x;
-}
-    set y(y){
-      this._y = y;
-}
-    set Xpos(Xpos){
-      this._Xpos = Xpos;
-}
-    set Ypos(Ypos){
-      this._Ypos = Ypos;
-}
-    get name(){
-     return this._name;
-}
-    get x(){
-      return this._x;
-}
-    get y(){
-        return this._y;
-}
-    get Xpos(){
-        return this._Xpos;
-}
-    get Ypos(){
-        return this._Ypos;
+  set name(name){
+    this._name = name;
+  }
+  set x(x){
+    this._x = x;
+  }
+  set y(y){
+    this._y = y;
+  }
+  set Xpos(Xpos){
+    this._Xpos = Xpos;
+  }
+  set Ypos(Ypos){
+    this._Ypos = Ypos;
+  }
+  get name(){
+   return this._name;
+  }
+  get x(){
+    return this._x;
+  }
+  get y(){
+    return this._y;
+  }
+  get Xpos(){
+    return this._Xpos;
+  }
+  get Ypos(){
+    return this._Ypos;
   }
 }
 
 var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
 
 function room (boon){
-  var retArr = [];
-  for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
-    for (var j = boon.yPos; j < boon.y + boon.yPos; j++) {
-      retArr.push([i,j]);
+    var retArr = [];
+    for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
+      for (var j = boon.yPos; j < boon.y + boon.yPos; j++) {
+        retArr.push([i,j]);
+      }
     }
-  }
   return retArr;
 }
 
 function drawRoom (){
   var retArr = [];
-  for (var i = 0; i < .length; i++) {
-    retArr.push([i]);
-  }
+    for (var i = 0; i < .length; i++) {
+      retArr.push([i]);
+    }
   return retArr;
 }
 
