@@ -53,6 +53,7 @@ function room (grid, boon){
   return retArr;
 }
 
+/*
 function drawRoom (grid, boon){
   var retArr = [];
   for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
@@ -62,7 +63,7 @@ function drawRoom (grid, boon){
   }
   return retArr;
 }
-
+*/
 /*----------------------------- Old Attempts ---------------------------------*/
 
 // function spacexy (room){
