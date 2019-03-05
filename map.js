@@ -59,7 +59,7 @@ function draw(grid){
 
 //button reset
 //re-draws grid
-document.getElementById("button2").onclick = function(){
+document.getElementById("button1").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
 
 }

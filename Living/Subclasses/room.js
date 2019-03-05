@@ -43,7 +43,7 @@ class Roomz {
 
 var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
 
-function room (boon){
+function room (grid, boon){
   var retArr = [];
   for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
     for (var j = boon.yPos; j < boon.y + boon.yPos; j++) {
@@ -53,10 +53,12 @@ function room (boon){
   return retArr;
 }
 
-function drawRoom (){
+function drawRoom (grid, boon){
   var retArr = [];
-  for (var i = 0; i < .length; i++) {
-    retArr.push([i]);
+  for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
+    for (var i = boon.yPos; i < boon.y + boon.yPos; i++) {
+      " ";
+    }
   }
   return retArr;
 }
