@@ -43,10 +43,10 @@ class Roomz {
 
 var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
 
-function room (grid, boon){
+function room (grid, randNum){
   var retArr = [];
-  for (var i = boon.yPos; i < boon.y + boon.yPos; i++) {
-    for (var j = boon.xPos; j < boon.x + boon.xPos; j++) {
+  for (var i = randNum.yPos; i < randNum.y + randNum.yPos; i++) {
+    for (var j = randNum.xPos; j < randNum.x + randNum.xPos; j++) {
       retArr.push([i,j]);
     }
   }

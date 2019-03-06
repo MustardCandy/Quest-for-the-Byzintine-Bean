@@ -1,14 +1,14 @@
 //atempt at random numbers
 function randNum(grid){
-    var room = {
-      lenY: Math.random() *grid.length/4,
-      lenY: Math.random() *grid.length/4,
+    var roomz = {
+      Xpos: Math.random() *grid.length/4,
+      Ypos: Math.random() *grid.length/4,
       y : Math.random() *grid.length,
       x : Math.random() *grid.length,
     }
-    room.x = Math.floor(room.x);
-    room.y = Math.floor(room.y);
-    room.lenX = Math.floor(room.lenX);
-    room.lenY = Math.floor(room.lenY);
-    return room;
+    roomz.x = Math.floor(room.x);
+    roomz.y = Math.floor(room.y);
+    roomz.lenX = Math.floor(room.lenX);
+    roomz.lenY = Math.floor(room.lenY);
+    return roomz;
 }
