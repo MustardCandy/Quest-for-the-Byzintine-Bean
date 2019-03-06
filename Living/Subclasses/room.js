@@ -45,58 +45,17 @@ var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
 
 function room (grid, boon){
   var retArr = [];
-  for (var i = boon.xPos; i < boon.x + boon.xPos; i++) {
-    for (var j = boon.yPos; j < boon.y + boon.yPos; j++) {
+  for (var i = boon.yPos; i < boon.y + boon.yPos; i++) {
+    for (var j = boon.xPos; j < boon.x + boon.xPos; j++) {
       retArr.push([i,j]);
     }
   }
   return retArr;
 }
 
-function drawRoom (grid, retArr){
-  var retArr = [];
-  for (var i = 0; i < retArr[0]; i++) {
-    retArr[i] = []
-    for (var j = 0; j < retArr[1]; j++) {
-      " ";
-    }
+function drawRoom (grid, room){
+  for (var i = 0; i < room.length; i++) {
+    grid[room[i][0]][room[i][1]] = " ";
   }
   return retArr;
 }
-
-/*----------------------------- Old Attempts ---------------------------------*/
-
-// function spacexy (room){
-  // space x length
-  // if (map.length >= roomz.x && map.length <= roomz.x + roomz.xLength) {
-    // " ";
-  // }
-    // for the spaces y coordes
-    // if (map.length >= roomz.y && map.length <= roomz.y + roomz.yLength) {
-      // " ";
-  // }
-// }
-
- // function drawSpace (spacexy){
-  // spacexy(grid);
-  // draw(spacexy);
-  // return draw(grid,room);
-// }
-
-//a class to spawn in the rooms
-// class Room extends Basic{
-//   constructor(location){
-//     super(" ");
-//     this._location = location;
-//   }
-
-//   //getters
-//   get location(){
-//     return this._location;
-//   }
-//
-//   //setters
-//   set location(location){
-//     this._location = location;
-//   }
-// }
