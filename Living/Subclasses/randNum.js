@@ -1,5 +1,5 @@
 //atempt at random numbers
-function numbers(grid){
+function randNum(grid){
     var room = {
       lenY: Math.random() *grid.length/4,
       lenY: Math.random() *grid.length/4,
