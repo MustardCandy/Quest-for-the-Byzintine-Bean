@@ -45,13 +45,7 @@ function draw(grid){
 }
 
 //button reset
-
 //re-draws grid
-<<<<<<< HEAD
 document.getElementById("button1").onclick = function(){
-=======
-
-document.getElementById("button2").onclick = function(){
->>>>>>> 0f726c162c10eb8fbfa4b3da41cd22302f9a19d3
   document.getElementById("paragraph").innerHTML = draw(map);
 }
