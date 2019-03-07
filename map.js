@@ -48,5 +48,7 @@ function draw(grid){
 //re-draws grid
 document.getElementById("button3").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
-  var tst = room(grid, randNum)
+  var rand = randNum(grid)
+  var tst = room(map, rand)
+  drawRoom(map, tst)
 }
