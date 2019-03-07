@@ -4,6 +4,7 @@ function randNum(grid){
       x: Math.random() *grid[0].length/4,
       y: Math.random() *grid[1].length/4,
     }
+    
       room.xPos = Math.random() *(grid[0].length - room.x);
       room.yPos = Math.random() *(grid[1].length - room.y);
 
