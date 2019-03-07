@@ -6,9 +6,9 @@ function randNum(grid){
       y : Math.random() *grid.length,
       x : Math.random() *grid.length,
     }
-    roomz.x = Math.floor(room.x);
-    roomz.y = Math.floor(room.y);
-    roomz.lenX = Math.floor(room.lenX);
-    roomz.lenY = Math.floor(room.lenY);
+    roomz.x = Math.floor(roomz.x);
+    roomz.y = Math.floor(roomz.y);
+    roomz.Xpos = Math.floor(roomz.Xpos);
+    roomz.Ypos = Math.floor(roomz.Ypos);
     return roomz;
 }
