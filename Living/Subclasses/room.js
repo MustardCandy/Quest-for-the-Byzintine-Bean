@@ -12,7 +12,16 @@ function room (grid, randNum){
 
 function drawRoom (grid, room){
   for (var i = 0; i < room.length; i++) {
-    grid[room[i][0]][room[i][1]] = " ";
+      grid[room[i][0]][room[i][1]] = " ";
   }
   return room;
+}
+
+//button reset
+//re-draws grid
+document.getElementById("button3").onclick = function(){
+  var rand = randNum(map);
+  var tst = room(map, rand);
+  drawRoom(map, tst);
+  document.getElementById("paragraph").innerHTML = draw(map);
 }
