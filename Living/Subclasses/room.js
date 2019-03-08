@@ -17,13 +17,9 @@ function drawRoom (grid, room){
 
 //button reset
 //re-draws grid
-document.getElementById("button3").onclick = function(){
+document.getElementById("button2").onclick = function(){
   var rand = randNum(map);
   var tst = room(map, rand);
   drawRoom(map, tst);
-  document.getElementById("paragraph").innerHTML = draw(map);
-}
-
-document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
 }
