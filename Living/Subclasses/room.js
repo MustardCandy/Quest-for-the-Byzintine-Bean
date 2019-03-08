@@ -1,3 +1,4 @@
+//random number generator for room location on grid
 function room (grid, randNum){
   var retArr = [];
   for (var i = randNum.yPos; i < randNum.y + randNum.yPos; i++) {
@@ -8,6 +9,7 @@ function room (grid, randNum){
   return retArr;
 }
 
+//draws room on grid
 function drawRoom (grid, room){
   for (var i = 0; i < room.length; i++) {
     if (grid[room[i][0]][room[i][1]] = " ") {
