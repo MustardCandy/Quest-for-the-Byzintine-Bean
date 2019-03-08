@@ -1,5 +1,3 @@
-var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
-
 function room (grid, randNum){
   var retArr = [];
   for (var i = randNum.yPos; i < randNum.y + randNum.yPos; i++) {
@@ -23,5 +21,9 @@ document.getElementById("button3").onclick = function(){
   var rand = randNum(map);
   var tst = room(map, rand);
   drawRoom(map, tst);
+  document.getElementById("paragraph").innerHTML = draw(map);
+}
+
+document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
 }
