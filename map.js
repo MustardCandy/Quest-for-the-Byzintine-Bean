@@ -23,22 +23,22 @@ function draw(grid){
   var gridLength = grid.length;//y length
   var lengthGrid = grid[0].length;//x length
   borderType += "+"; //corner
-    for (var i = 0; i < lengthGrid; i++) {
-      borderType += "~~"; //border
-    }
+  for (var i = 0; i < lengthGrid; i++) {
+    borderType += "~~"; //border
+  }
   borderType += "+"; //corner
   borderType += "<br>"; //break used
-    for (i = 0; i < gridLength; i++) {
-      borderType += "|" //border
-        for (j = 0; j < lengthGrid; j++) {
-          borderType += " " + grid[i][j]; //spaces
-        }
-      borderType += "|" + "<br>"; //border and break
-    }
+  for (i = 0; i < gridLength; i++) {
+    borderType += "|" //border
+      for (j = 0; j < lengthGrid; j++) {
+        borderType += " " + grid[i][j]; //spaces
+      }
+    borderType += "|" + "<br>"; //border and break
+  }
   borderType += "+"; //corner
-    for (var i = 0; i < lengthGrid; i++) {
-      borderType += "~~"; //border
-    }
+  for (var i = 0; i < lengthGrid; i++) {
+    borderType += "~~"; //border
+  }
   borderType += "+"; //corner
   borderType += "<br>"; //break
   return borderType; //return all of the borderType
