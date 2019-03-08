@@ -1,3 +1,4 @@
+//random number generator for room location on grid
 function room (grid, randNum){
   var retArr = [];
   for (var i = randNum.yPos; i < randNum.y + randNum.yPos; i++) {
@@ -8,6 +9,7 @@ function room (grid, randNum){
   return retArr;
 }
 
+//draws room on grid
 function drawRoom (grid, room){
   console.log(room)
   for (var i = 0; i < room.length; i++) {
@@ -19,13 +21,9 @@ function drawRoom (grid, room){
 
 //button reset
 //re-draws grid
-document.getElementById("button3").onclick = function(){
+document.getElementById("button2").onclick = function(){
   var rand = randNum(map);
   var tst = room(map, rand);
   drawRoom(map, tst);
-  document.getElementById("paragraph").innerHTML = draw(map);
-}
-
-document.getElementById("button2").onclick = function(){
   document.getElementById("paragraph").innerHTML = draw(map);
 }
