@@ -11,7 +11,9 @@ function room (grid, randNum){
 
 //draws room on grid
 function drawRoom (grid, room){
+  console.log(room)
   for (var i = 0; i < room.length; i++) {
+    console.log(room[i])
     grid[room[i][0]][room[i][1]] = " ";
   }
   return room;
