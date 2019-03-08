@@ -1,5 +1,3 @@
-var boon = {x: 2, y: 4, xPos: 3, yPos: 5}
-
 function room (grid, randNum){
   var retArr = [];
   for (var i = randNum.yPos; i < randNum.y + randNum.yPos; i++) {
