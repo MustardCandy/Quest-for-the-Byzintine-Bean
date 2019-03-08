@@ -5,12 +5,13 @@ function randNum(grid){
     y: Math.random() *grid[1].length/4,
   }
 
-  roomz.xPos = Math.random() *(grid[0].length - room.x);
-  roomz.yPos = Math.random() *(grid[1].length - room.y);
+  roomz.xPos = Math.random() *(grid[0].length - roomz.x);
+  roomz.yPos = Math.random() *(grid[1].length - roomz.y);
 
   roomz.x = Math.floor(roomz.x);
   roomz.y = Math.floor(roomz.y);
   roomz.xPos = Math.floor(roomz.xPos);
   roomz.yPos = Math.floor(roomz.yPos);
   return roomz;
+  console.log(roomz);
 }
