@@ -10,7 +10,7 @@ function room (grid, randNum){
 
 function drawRoom (grid, room){
   for (var i = 0; i < room.length; i++) {
-      grid[room[i][0]][room[i][1]] = " ";
+    grid[room[i][0]][room[i][1]] = " ";
   }
   return room;
 }
