@@ -12,7 +12,7 @@ function room (grid, randNum){
 //draws room on grid
 function drawRoom (grid, room){
   for (var i = 0; i < room.length; i++) {
-    if (grid[room[i][0]][room[i][1]] = " ") {
+    if (grid[room[i][0]][room[i][1]] == " ") {
       return draw(map);
     }
   }
