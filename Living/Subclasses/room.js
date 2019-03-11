@@ -25,8 +25,10 @@ function drawRoom (grid, room){
 //button reset
 //re-draws grid
 document.getElementById("button2").onclick = function(){
+  for (var i = 0; i < 101; i++) {
   var rand = randNum(map);
   var tst = room(map, rand);
   drawRoom(map, tst);
+}
   document.getElementById("paragraph").innerHTML = draw(map);
 }
