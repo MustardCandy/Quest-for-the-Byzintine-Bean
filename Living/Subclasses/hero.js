@@ -18,4 +18,3 @@ function stringCheck(str) {
 
 
   }
-//aidan is dum
