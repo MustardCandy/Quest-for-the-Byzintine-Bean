@@ -1,4 +1,3 @@
-function multRooom(grid){
     document.getElementById("button3").onclick = function(){
       for (var i = 0; i < 101; i++) {
       var rand = randNum(map);
@@ -7,4 +6,3 @@ function multRooom(grid){
     }
       document.getElementById("paragraph").innerHTML = draw(map);
   }
-}
