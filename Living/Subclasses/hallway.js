@@ -4,3 +4,5 @@
 function hallway(grid) {
 
 }
+
+//https://medium.com/@victorcatalintorac/dungeon-with-rooms-algorithm-for-javascript-ultimate-begginer-guide-ec1489e90314
