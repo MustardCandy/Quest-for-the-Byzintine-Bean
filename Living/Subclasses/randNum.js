@@ -1,16 +1,27 @@
-
 //random odd number generator for x, y, xPos, & yPos
-function randomOddNumber(number){
-  var randInt = Math.random()*number;
-  randInt = Math.floor(randInt);
-  console.log(randInt);
-  var remainder = randInt %2;
-  console.log(remainder);
-  if(remainder == 1){
-    return remainder;
-  }else if(remainder == 0){
-    return null;
+function randomOddNumber(numberX,numberY){
+  var randIntX = Math.random()*numberX;
+  var randIntY = Math.random()*numberY;
+  roomArr = [];
+  randIntX = Math.floor(randIntX);
+  randIntY = Math.floor(randIntY);
+  var remainderX = randIntX %2;
+  var remainderY = randIntY %2;
+  if(remainderX == 1){
+     randIntX;
+    roomArr.push(randIntX);
+  }else if(remainderX == 0){
+     randIntX = randIntX + 1;
+    roomArr.push(randIntX);
   }
+  if(remainderY == 1){
+     randIntY;
+    roomArr.push(randIntY);
+  }else if(remainderY == 0){
+     randIntY = randIntY + 1;
+    roomArr.push(randIntY);
+  }
+  return roomArr;
 }
 
 
