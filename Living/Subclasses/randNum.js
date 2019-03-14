@@ -25,6 +25,7 @@ function randomOddNumber(numberX,numberY){
 }
 
 
+//random number generator for x, y, xPos, & yPos
 function randNum(grid){
   var roomz = {
     x: Math.random() *grid[0].length/4,
