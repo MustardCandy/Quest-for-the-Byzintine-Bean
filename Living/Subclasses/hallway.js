@@ -2,7 +2,7 @@
 //hallways will need a function that is passed grid
 //make rooms always an odd length so the rooms come out of middle
 function hallway(grid) {
-
+  
 }
 
-//https://medium.com/@victorcatalintorac/dungeon-with-rooms-algorithm-for-javascript-ultimate-begginer-guide-ec1489e90314
+// https://gamedevelopment.tutsplus.com/tutorials/create-a-procedurally-generated-dungeon-cave-system--gamedev-10099
