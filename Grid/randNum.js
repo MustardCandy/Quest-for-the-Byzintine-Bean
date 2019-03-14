@@ -1,4 +1,3 @@
-
 //random odd number generator for x, y, xPos, & yPos
 function randomOddNumber(number){
   var randInt = Math.random()*number;
@@ -13,7 +12,7 @@ function randomOddNumber(number){
   }
 }
 
-
+//random number generator to determine size of rooms
 function randNum(grid){
   var roomz = {
     x: Math.random() *grid[0].length/4,
