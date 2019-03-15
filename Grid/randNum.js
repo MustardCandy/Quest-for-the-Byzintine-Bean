@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 function randomOddNumber(){
   var randIntX = Math.random()*100;
@@ -15,19 +14,6 @@ function randomOddNumber(){
   }else if(remainderX == 0){
      randIntX = randIntX + 1;
     roomArrX.push(randIntX);
-=======
-//random odd number generator for x, y, xPos, & yPos
-function randomOddNumber(number){
-  var randInt = Math.random()*number;
-  randInt = Math.floor(randInt);
-  console.log(randInt);
-  var remainder = randInt %2;
-  console.log(remainder);
-  if(remainder == 1){
-    return remainder;
-  }else if(remainder == 0){
-    return null;
->>>>>>> 870e70d1412d7a581200660e163d50204a8f7418
   }
   if(remainderY == 1){
      randIntY;
@@ -41,14 +27,9 @@ function randomOddNumber(number){
   return roomArr;
 }
 
-<<<<<<< HEAD
 
 //random number generator for x, y, xPos, & yPos
-function randNum(grid,randomOddNumber){
-=======
-//random number generator to determine size of rooms
-function randNum(grid){
->>>>>>> 870e70d1412d7a581200660e163d50204a8f7418
+function randNumb(grid,randomOddNumber){
   var roomz = {
     x: roomArrX/3
     y: roomArrY/3
