@@ -22,6 +22,11 @@ function drawRoom (grid, room){
   return room;
 }
 
+//
+function overlap (grid){
+  
+}
+
 //button reset
 //re-draws grid
 document.getElementById("button2").onclick = function(){
