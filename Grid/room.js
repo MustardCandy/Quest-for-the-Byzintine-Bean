@@ -24,7 +24,7 @@ function drawRoom (grid, room){
 
 //overlap will make it so no rooms touch or overlap
 function overlap (grid){
-
+  
 }
 
 //button reset

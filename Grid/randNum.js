@@ -1,21 +1,5 @@
-function randomOddNumber(){
-  var randIntX = Math.random()*100;
-  var randIntY = Math.random()*50;
-  roomArrX = [];
-  roomArrY = [];
-  randIntX = Math.floor(randIntX);
-  randIntY = Math.floor(randIntY);
-  var remainderX = randIntX %2;
-  var remainderY = randIntY %2;
-  if(remainderX == 1){
-     randIntX;
-    roomArrX.push(randIntX);
-  }else if(remainderX == 0){
-     randIntX = randIntX + 1;
-    roomArrX.push(randIntX);
-
 //random odd number generator for x, y, xPos, & yPos
-function randomOddNumber(number){
+function randOddNumber(number){
   var randInt = Math.random()*number;
   randInt = Math.floor(randInt);
   console.log(randInt);
@@ -24,13 +8,13 @@ function randomOddNumber(number){
   if(remainder == 1){
     return remainder;
   }else if(remainder == 0){
-    return null;
+    randIntX ++;
   }
   if(remainderY == 1){
      randIntY;
     roomArrY.push(randIntY);
   }else if(remainderY == 0){
-     randIntY = randIntY + 1;
+     randIntY = ++;
     roomArrY.push(randIntY);
   }
   console.log(roomArrX);
