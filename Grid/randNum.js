@@ -1,8 +1,12 @@
 function randomOddNumber(grid){
+  var roomArr = {
+    x: roomArrX,
+    y: roomArrY
+  }
   var randIntX = Math.random()*100;
   var randIntY = Math.random()*50;
-  roomArrX = [];
-  roomArrY = [];
+  var roomArrX;
+  var roomArrY;
   randIntX = Math.floor(randIntX);
   randIntY = Math.floor(randIntY);
   var remainderX = randIntX %2;
@@ -12,36 +16,32 @@ function randomOddNumber(grid){
     roomArrX.push(randIntX);
   }else if(remainderX == 0){
      randIntX ++;
-    roomArrX.push(randIntX);
+    this.roomArr.x.push(randIntX);
   }
   if(remainderY == 1){
      randIntY;
     roomArrY.push(randIntY);
   }else if(remainderY == 0){
      randIntY ++;
-    roomArrY.push(randIntY);
-  }
-  var roomArr = {
-    x: roomArrX,
-    y: roomArrY
+    this.roomArr.y.push(randIntY);
   }
   return roomArr;
 }
 
 //random number generator to determine size of rooms
-function randNum(grid, roomArrX, roomArrY){
+function randNum(grid, roomArr){
   var roomz = {
-    x: roomArrX/3,
-    y: roomArrY/3
+    x: roomArr.x/2,
+    y: roomArr.y/2
 }
 
-  roomz.xPos = Math.random() *(grid[0].length - roomz.x);
-  roomz.yPos = Math.random() *(grid.length - roomz.y);
+  this.roomz.xPos = Math.random() *(grid[0].length - roomz.x);
+  this.roomz.yPos = Math.random() *(grid.length - roomz.y);
 
-  roomz.x = Math.floor(roomz.x);
-  roomz.y = Math.floor(roomz.y);
+  this.roomz.x = Math.ceil(roomz.x);
+  this.roomz.y = Math.ceil(roomz.y);
 
-  roomz.xPos = Math.floor(roomz.xPos);
-  roomz.yPos = Math.floor(roomz.yPos);
+  this.roomz.xPos = Math.floor(roomz.xPos);
+  this.roomz.yPos = Math.floor(roomz.yPos);
   return roomz;
 }
