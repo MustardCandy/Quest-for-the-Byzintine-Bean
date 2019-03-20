@@ -1,3 +1,4 @@
+//chooses odd numbers for the random number generator
 function randomOddNumber(grid){
   var roomArr = {
     x: roomArrX,
