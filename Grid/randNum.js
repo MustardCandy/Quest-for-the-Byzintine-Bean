@@ -35,14 +35,13 @@ function randomOddNumber(grid){
     x: roomArrX,
     y: roomArrY
   }
-  console.log(roomArr.x)
-  console.log(roomArr.y)
+
     return roomArr;
 }
 
 //random number generator to determine size of rooms
 //roomArr is still return nothing ask mr malorie why
-function randNum(grid,randomOddNumber){
+function randNum(grid,roomArr){
   var roomz = {
     x: roomArr.x/3,
     y: roomArr.y/3
