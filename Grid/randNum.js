@@ -19,17 +19,16 @@ function randomOddNumber(grid){
     roomArrX = randIntX;
   }
   if(remainderY == 1){
-<<<<<<< HEAD
+
     randIntY;
     roomArrY = randIntY;
   }else if(remainderY == 0){
     randIntY ++;
-=======
+
      randIntY;
     roomArrY = randIntY;
   }else if(remainderY == 0){
      randIntY ++;
->>>>>>> 0207f4a323453a2ee0cec7868a1107443e9db458
     roomArrY = randIntY;
   }
   var roomArr = {
@@ -47,7 +46,7 @@ function randNum(grid,randomOddNumber){
   var roomz = {
     x: roomArr.x/3,
     y: roomArr.y/3
-}
+  }
 
   roomz.xPos = Math.random() *(grid[0].length - roomz.x);
   roomz.yPos = Math.random() *(grid.length - roomz.y);
