@@ -1,30 +1,32 @@
 function randomOddNumber(grid){
   var randIntX = Math.random()*100;
   var randIntY = Math.random()*50;
-  roomArrX = [];
-  roomArrY = [];
+  var roomArrX;
+  var roomArrY;
   randIntX = Math.floor(randIntX);
   randIntY = Math.floor(randIntY);
   var remainderX = randIntX %2;
   var remainderY = randIntY %2;
   if(remainderX == 1){
      randIntX;
-    roomArrX.push(randIntX);
+    roomArrX = randIntX;
   }else if(remainderX == 0){
      randIntX ++;
-    roomArrX.push(randIntX);
+    roomArrX = randIntX;
   }
   if(remainderY == 1){
      randIntY;
-    roomArrY.push(randIntY);
+    roomArrY = randIntY;
   }else if(remainderY == 0){
      randIntY ++;
-    roomArrY.push(randIntY);
+    roomArrY = randIntY;
   }
   var roomArr = {
     x: roomArrX,
     y: roomArrY
   }
+  console.log(roomArr.x)
+  console.log(roomArr.y)
   return roomArr;
 }
 
