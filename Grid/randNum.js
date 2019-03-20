@@ -35,6 +35,7 @@ function randomOddNumber(grid){
 }
 
 //random number generator to determine size of rooms
+//roomArr is still return nothing ask mr malorie why 
 function randNum(grid,randomOddNumber){
 
   var roomz = {
