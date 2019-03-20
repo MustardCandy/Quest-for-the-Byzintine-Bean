@@ -31,23 +31,24 @@ function randomOddNumber(grid){
   }
   console.log(roomArr.x)
   console.log(roomArr.y)
-  return roomArr;
+    return roomArr;
 }
 
 //random number generator to determine size of rooms
-function randNum(grid,roomArr){
+function randNum(grid,randomOddNumber){
+
   var roomz = {
     x: roomArr.x/3,
     y: roomArr.y/3
 }
 
-roomz.xPos = Math.random() *(grid[0].length - roomz.x);
-roomz.yPos = Math.random() *(grid.length - roomz.y);
+  roomz.xPos = Math.random() *(grid[0].length - roomz.x);
+  roomz.yPos = Math.random() *(grid.length - roomz.y);
 
-roomz.x = Math.ceil(roomz.x);
-roomz.y = Math.ceil(roomz.y);
+  roomz.x = Math.ceil(roomz.x);
+  roomz.y = Math.ceil(roomz.y);
 
-roomz.xPos = Math.floor(roomz.xPos);
-roomz.yPos = Math.floor(roomz.yPos);
-  return roomz;
+  roomz.xPos = Math.floor(roomz.xPos);
+  roomz.yPos = Math.floor(roomz.yPos);
+    return roomz;
 }
