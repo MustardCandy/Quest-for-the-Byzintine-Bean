@@ -5,7 +5,7 @@ document.getElementById("button3").onclick = function(){
     var rand = randNum(map,oddNumber);
     console.log(rand);
     var tst = room(grid, rand);
-    drawRoom(grid, tst);
+    drawRoom(map, tst);
   }
   document.getElementById("paragraph").innerHTML = draw(map);
 }

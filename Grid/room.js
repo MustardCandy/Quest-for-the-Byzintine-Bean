@@ -12,19 +12,14 @@ function room (grid, randNum){
 //draws room on grid
 function drawRoom (grid, room){
   for (var i = 0; i < room.length; i++) {
-    if (grid[room[i][0]][room[i][1]] == " ") {
+    if (map[room[i][0]][room[i][1]] == " ") {
       return draw(map);
     }
   }
   for (var i = 0; i < room.length; i++) {
-    grid[room[i][0]][room[i][1]] = " ";
+    map[room[i][0]][room[i][1]] = " ";
   }
   return room;
-}
-
-//overlap will make it so no rooms touch or overlap
-function overlap (grid){
-  
 }
 
 //button reset
