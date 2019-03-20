@@ -19,10 +19,17 @@ function randomOddNumber(grid){
     roomArrX = randIntX;
   }
   if(remainderY == 1){
+<<<<<<< HEAD
+    randIntY;
+    roomArrY = randIntY;
+  }else if(remainderY == 0){
+    randIntY ++;
+=======
      randIntY;
     roomArrY = randIntY;
   }else if(remainderY == 0){
      randIntY ++;
+>>>>>>> 0207f4a323453a2ee0cec7868a1107443e9db458
     roomArrY = randIntY;
   }
   var roomArr = {
