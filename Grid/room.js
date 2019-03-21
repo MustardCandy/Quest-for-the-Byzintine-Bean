@@ -9,10 +9,10 @@ function room (grid, randNum){
   return retArr;
 }
 
-//draws room on grid
-function drawRoom (grid, room){
+//draws room on map
+function drawRoom (map,room){
   for (var i = 0; i < room.length; i++) {
-    if (map[room[i][0]][room[i][1]] == " ") {
+    if (map[room[i][0]][room[i][1]] == " "){
       return draw(map);
     }
   }
