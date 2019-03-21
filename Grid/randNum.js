@@ -4,8 +4,8 @@ function randomOddNumber(grid){
     x: roomArrX,
     y: roomArrY
   }
-  var randIntX = Math.random()*100;
-  var randIntY = Math.random()*50;
+  var randIntX = Math.random()*33;
+  var randIntY = Math.random()*17;
   var roomArrX;
   var roomArrY;
   randIntX = Math.floor(randIntX);
@@ -44,8 +44,8 @@ function randomOddNumber(grid){
 //roomArr is still return nothing ask mr malorie why
 function randNum(grid,roomArr){
   var roomz = {
-    x: roomArr.x/3,
-    y: roomArr.y/3
+    x: roomArr.x,
+    y: roomArr.y
   }
 
   roomz.xPos = Math.random() *(grid[0].length - roomz.x);
