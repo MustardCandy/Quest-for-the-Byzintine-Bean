@@ -20,12 +20,10 @@ function randomOddNumber(grid){
     roomArrX = randIntX;
   }
   if(remainderY == 1){
-
     randIntY;
     roomArrY = randIntY;
   }else if(remainderY == 0){
     randIntY ++;
-
      randIntY;
     roomArrY = randIntY;
   }else if(remainderY == 0){
@@ -36,7 +34,6 @@ function randomOddNumber(grid){
     x: roomArrX,
     y: roomArrY
   }
-
     return roomArr;
 }
 
