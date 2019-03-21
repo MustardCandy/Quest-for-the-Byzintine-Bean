@@ -32,11 +32,11 @@ function randomOddNumber(grid){
 
   //odd number for the heigth
   if(remainderY == 1){
-
     randIntY;
     roomArrY = randIntY;
   }else if(remainderY == 0){
     randIntY ++;
+<<<<<<< HEAD
 }
 
   //odd number for the x coordinate
@@ -55,6 +55,13 @@ function randomOddNumber(grid){
   }else if(remainderPosY == 0){
      randIntPosY ++;
     roomPosY = randIntPosY;
+=======
+     randIntY;
+    roomArrY = randIntY;
+  }else if(remainderY == 0){
+     randIntY ++;
+    roomArrY = randIntY;
+>>>>>>> 988feba72dee62ad12e47b9bdee03b826fcb4d79
   }
   var roomArr = {
     x: roomArrX,
@@ -62,8 +69,11 @@ function randomOddNumber(grid){
     PosY : roomPosX,
     PosX : roomPosY
   }
+<<<<<<< HEAD
 
 //
+=======
+>>>>>>> 988feba72dee62ad12e47b9bdee03b826fcb4d79
     return roomArr;
 }
 
