@@ -2,8 +2,8 @@
 
   function randomOddNumber(grid){
 
-    var randIntX = Math.random()*25;
-    var randIntY = Math.random()*13;
+    var randIntX = Math.random()*50;
+    var randIntY = Math.random()*26;
     var randIntPosX = Math.random()*99;
     var randIntPosY = Math.random()*99;
 
