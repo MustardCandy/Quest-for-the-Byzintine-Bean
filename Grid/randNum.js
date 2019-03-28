@@ -1,9 +1,16 @@
 function randomOddNumber(grid){
 
-    var randIntX = Math.random()*25;
+    var randIntX = Math.random()*33;
     var randIntY = Math.random()*17;
     var randIntPosX = Math.random()*90;
     var randIntPosY = Math.random()*40;
+
+    if(randIntX < 5){
+      randIntX = 5
+    }
+    if(randIntY < 4){
+      randIntY = 4
+    }
 
     if(randIntX + randIntPosX >= 100){
       randIntPosX = randIntPosX - randIntX
@@ -71,7 +78,7 @@ function randomOddNumber(grid){
       PosX : roomPosX
     }
 
-  console.log(roomArr);
+//  console.log(roomArr);
       return roomArr;
   }
 
