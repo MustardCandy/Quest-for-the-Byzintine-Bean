@@ -1,6 +1,4 @@
-
-
-  function randomOddNumber(grid){
+function randomOddNumber(grid){
 
     var randIntX = Math.random()*25;
     var randIntY = Math.random()*17;
