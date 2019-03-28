@@ -2,21 +2,22 @@
 
   function randomOddNumber(grid){
 
-    var randIntX = Math.random()*50;
-    var randIntY = Math.random()*26;
-    var randIntPosX = Math.random()*99;
-    var randIntPosY = Math.random()*99;
-
+    var randIntX = Math.random()*25;
+    var randIntY = Math.random()*17;
+    var randIntPosX = Math.random()*90;
+    var randIntPosY = Math.random()*40;
+//blank varibles that will
     var roomArrX;
     var roomArrY;
     var roomPosX;
     var roomPosY;
-
+//round the numbers down to integers
     randIntX = Math.floor(randIntX);
     randIntY = Math.floor(randIntY);
     randIntPosX = Math.floor(randIntPosX);
     randIntPosY = Math.floor(randIntPosY);
 
+//the varibles that store the remainder of their corrosponding varibles
     var remainderX = randIntX %2;
     var remainderY = randIntY %2;
     var remainderPosX = randIntPosX %2;
@@ -60,11 +61,11 @@
     var roomArr = {
       x: roomArrX,
       y: roomArrY,
-      PosY : roomArrY,
-      PosX : roomArrX
+      PosY : roomPosY,
+      PosX : roomPosX
     }
 
-  //
+  console.log(roomArr);
       return roomArr;
   }
 
