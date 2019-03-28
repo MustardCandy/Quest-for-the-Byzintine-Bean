@@ -6,7 +6,15 @@
     var randIntY = Math.random()*17;
     var randIntPosX = Math.random()*90;
     var randIntPosY = Math.random()*40;
-//blank varibles that will
+
+    if(randIntX + randIntPosX >= 100){
+      randIntPosX = randIntPosX - randIntX
+    }
+    if(randIntY + randIntPosY >= 49){
+      randIntPosY = randIntPosY - randIntX
+    }
+
+//blank varibles that will be were istored the resualts of the randomOddNumber
     var roomArrX;
     var roomArrY;
     var roomPosX;
