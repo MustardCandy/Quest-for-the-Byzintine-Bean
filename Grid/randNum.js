@@ -6,10 +6,10 @@ function randomOddNumber(grid){
     var randIntPosY = Math.random()*40;
 
     if(randIntX < 5){
-      randIntX = 5
+      randIntX = 5;
     }
-    if(randIntY < 4){
-      randIntY = 4
+    if(randIntY < 5){
+      randIntY = 5;
     }
 
     if(randIntX + randIntPosX >= 100){

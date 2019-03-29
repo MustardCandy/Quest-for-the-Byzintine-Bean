@@ -1,5 +1,5 @@
 document.getElementById("button3").onclick = function(){
-  for (var i = 0; i < 1001; i++) {
+  for (var i = 0; i < 9001; i++) {
     var oddNumber = randomOddNumber(map);
     var rand = randNum(map,oddNumber);
   //  console.log(rand);
