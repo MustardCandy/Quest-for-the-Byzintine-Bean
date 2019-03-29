@@ -24,6 +24,7 @@ function randomOddNumber(grid){
     var roomArrY;
     var roomPosX;
     var roomPosY;
+
 //round the numbers down to integers
     randIntX = Math.floor(randIntX);
     randIntY = Math.floor(randIntY);
