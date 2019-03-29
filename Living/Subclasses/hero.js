@@ -6,15 +6,21 @@ class Hero extends Basic {
   }
 }
 
-function stringCheck(str) {
-  if(str.includes("&#x2009")){
+function stringCheck(map,str) {
+  if(str.includes(" ")){
     return true;
   }else{
     return false;
   }
-
   }
-  function possibleMoves(){
+  //a varible so we can pass a function
+var string = stringCheck(str,map);
+
+  function spawn(map,string){
+  if (string = true){
+
+  }else{spawn(map,string)}
+
 
 
   }
