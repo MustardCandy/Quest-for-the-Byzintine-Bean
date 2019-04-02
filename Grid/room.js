@@ -1,8 +1,8 @@
 //random number generator for room location on grid
-function room (grid, randNum){
+function room (map,roomz){
   var retArr = [];
-  for (var i = randNum.yPos; i < randNum.y + randNum.yPos; i++) {
-    for (var j = randNum.xPos; j < randNum.x + randNum.xPos; j++) {
+  for (var i = roomz.yPos; i < roomz.y + roomz.yPos; i++) {
+    for (var j = roomz.xPos; j < roomz.x + roomz.xPos; j++) {
       retArr.push([i,j]);
     }
   }

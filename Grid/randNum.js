@@ -99,18 +99,14 @@ function randomOddNumber(grid){
     roomz.yPos = Math.floor(roomz.yPos);
       return roomz;
   }
-  var boop = randomOddNumber(grid);
-
-  var beep = randNum(boop,roomArr)
-
-  function midPoint(beep,roomz){
-    // console.log(roomz.yPos);
-    // console.log(roomz.xPos);
+  function midPoint(roomz){
+     console.log(roomz.yPos);
+     console.log(roomz.xPos);
     var halfX = roomz.xPos/2;
     var halfY = roomz.yPos/2;
     halfX = Math.ceil(halfX);
     halfY = Math.ceil(halfY);
     var halfArr = [];
-    halfArr.push([halfX,halfY])
+    halfArr.push([halfY,halfX])
     return halfArr;
   }
