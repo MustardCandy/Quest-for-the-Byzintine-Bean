@@ -99,14 +99,13 @@ function randomOddNumber(grid){
     roomz.yPos = Math.floor(roomz.yPos);
       return roomz;
   }
-  function midPoint(roomz){
-     console.log(roomz.yPos);
-     console.log(roomz.xPos);
+
+  function midPoint(map,roomz){
     var halfX = roomz.xPos/2;
     var halfY = roomz.yPos/2;
     halfX = Math.ceil(halfX);
     halfY = Math.ceil(halfY);
     var halfArr = [];
-    halfArr.push([halfY,halfX])
+    halfArr.push([halfY,halfX]);
     return halfArr;
   }
