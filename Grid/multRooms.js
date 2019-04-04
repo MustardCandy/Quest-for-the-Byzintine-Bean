@@ -10,3 +10,4 @@ document.getElementById("button3").onclick = function(){
   }
   document.getElementById("paragraph").innerHTML = draw(map);
 }
+//here

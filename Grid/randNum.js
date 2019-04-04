@@ -109,3 +109,5 @@ function randomOddNumber(grid){
     halfArr.push([halfY,halfX]);
     return halfArr;
   }
+
+  //here
