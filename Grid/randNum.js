@@ -1,9 +1,9 @@
 function randomOddNumber(grid){
 
-    var randIntX = Math.random()*5;
-    var randIntY = Math.random()*5;
-    var randIntPosX = Math.random()*10;
-    var randIntPosY = Math.random()*10;
+    var randIntX = Math.random()*33;
+    var randIntY = Math.random()*17;
+    var randIntPosX = Math.random()*90;
+    var randIntPosY = Math.random()*40;
 
     if(randIntX < 5){
       randIntX = 5;
