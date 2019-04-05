@@ -1,9 +1,9 @@
 function randomOddNumber(grid){
 
-    var randIntX = Math.random()*33;
-    var randIntY = Math.random()*17;
-    var randIntPosX = Math.random()*90;
-    var randIntPosY = Math.random()*40;
+    var randIntX = Math.random()*5;
+    var randIntY = Math.random()*5;
+    var randIntPosX = Math.random()*10;
+    var randIntPosY = Math.random()*10;
 
     if(randIntX < 5){
       randIntX = 5;
@@ -100,14 +100,9 @@ function randomOddNumber(grid){
       return roomz;
   }
 
-  function midPoint(map,roomz){
-    var halfX = roomz.xPos/2;
-    var halfY = roomz.yPos/2;
-    halfX = Math.ceil(halfX);
-    halfY = Math.ceil(halfY);
-    var halfArr = [];
-    halfArr.push([halfY,halfX]);
-    return halfArr;
+  function midPoint(roomz){
+    roomz.xCen = roomz.xPos + Math.floor(roomz.x/2);
+    roomz.yCen = roomz.yPos + Math.floor(roomz.y/2);
   }
 
   //here

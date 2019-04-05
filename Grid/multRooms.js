@@ -1,10 +1,10 @@
 document.getElementById("button3").onclick = function(){
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 1; i++) {
     var oddNumber = randomOddNumber(map);
     var rand = randNum(map,oddNumber);
-    console.log(rand);
-    var mid = midPoint(map,rand);
+    var mid = midPoint(rand);
     console.log(mid);
+    console.log(rand);
     var tst = room(map,rand);
     drawRoom(map,tst);
   }
