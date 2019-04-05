@@ -9,7 +9,3 @@ bad memory
 2. Work over the weekend on CSS, comments, other small fixes, and hallways
 
 3. Make grid an object (Dont think we will need to do this but still might)
-
-4.We have a really really big oops so the quardinates being fed to the map
-are not the same as what is drawing on the map(#kades fault) nut fr this is a
-biiiiiigggg not good  
