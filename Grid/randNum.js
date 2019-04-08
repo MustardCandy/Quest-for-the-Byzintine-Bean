@@ -48,7 +48,6 @@ function randomOddNumber(grid){
 
     //odd number for the heigth
     if(remainderY == 1){
-
       randIntY;
       roomArrY = randIntY;
     }else if(remainderY == 0){
@@ -91,6 +90,10 @@ function randomOddNumber(grid){
       y: roomArr.y,
       yPos: roomArr.PosY,
       xPos: roomArr.PosX
+    }
+    console.log(roomz.y)
+    if(roomz.y == undefined){
+      roomz.y = 7
     }
     roomz.x = Math.floor(roomz.x);
     roomz.y = Math.floor(roomz.y);
