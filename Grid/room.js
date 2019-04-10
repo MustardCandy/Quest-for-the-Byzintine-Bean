@@ -11,14 +11,22 @@ function room (map,roomz){
 
 //draws room on grid
 function drawRoom (grid, room){
+  //
   for (var i = 0; i < room.length; i++) {
     if (map[room[i][0]][room[i][1]] == " ") {
-      return draw(map);
+      console.log("no");
+      //console.log(draw(map));
+      //???
+      // return draw(map);
+      return false;
     }
   }
   for (var i = 0; i < room.length; i++) {
     map[room[i][0]][room[i][1]] = " ";
   }
+  console.log("yes");
+  console.log(room);
+  //returns the draw room
   return room;
 }
 

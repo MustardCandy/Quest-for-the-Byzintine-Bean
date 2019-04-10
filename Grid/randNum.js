@@ -91,7 +91,6 @@ function randomOddNumber(grid){
       yPos: roomArr.PosY,
       xPos: roomArr.PosX
     }
-    console.log(roomz.y)
     if(roomz.y == undefined){
       roomz.y = 7
     }
