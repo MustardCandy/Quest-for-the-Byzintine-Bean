@@ -8,7 +8,7 @@
   //function that makes the number odd
   function oddNum() {
     var rand = randNum();
-    while (floor % 2 == 0) { //says floor is not defined ask Mr. Lamorie
+    while (rand % 2 == 0) {
       rand = randNum();
     }
     return rand;
