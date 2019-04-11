@@ -25,8 +25,8 @@ function drawRoom (grid, room){
   for (var i = 0; i < room.length; i++) {
     map[room[i][0]][room[i][1]] = " ";
   }
-  console.log("yes");
-  console.log(room);
+  // console.log("yes");
+  // console.log(room);
   //returns the draw room
   return room;
 }

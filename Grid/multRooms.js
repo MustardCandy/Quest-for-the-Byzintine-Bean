@@ -11,8 +11,12 @@ document.getElementById("button3").onclick = function(){
     var mid = midPoint(rand);
     //a var for the room functon
     var tst = room(map,rand);
-    var dRoom =  drawRoom(map,tst);
+    //a var for the return of the draw room function
+    var dRoom = drawRoom(map,tst);
     // if a room actually draws
+    var hallWay2X = hallWayX(rand,room,dRoom);
+    //a var for the hallway X
+    var hallWay2Y = hallWayY(rand,room,dRoom);
 //draws over the html text
   document.getElementById("paragraph").innerHTML = draw(map);
 }

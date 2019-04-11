@@ -1,7 +1,7 @@
 
 //this function will creat an array from two rooms from the X position to THE
 //other x position
-function hallWayX(){
+function hallWayX(rand,dRoom){
   //these three thing are varibles that will be given values later
   var room1 = null;
   var room2 = null;
@@ -29,7 +29,7 @@ function hallWayX(){
     }
   }
 //this does the same as the one above it however it will be for the y corrdinets
-function hallWayY(){
+function hallWayY(rand,dRoom){
   var room1 = null;
   var room2 = null;
   var hallArrY = [];
@@ -46,3 +46,9 @@ function hallWayY(){
       }
     }
   }
+  //This function will be to draw the X hallWay
+  function DrawhallX(){
+    for (var i = 0; i < room.length; i++) {
+      map[room[i][0]][room[i][1]] = " ";
+  }
+}
