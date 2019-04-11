@@ -22,3 +22,5 @@ document.getElementById("button3").onclick = function(){
 }
 }
 //hi
+
+//why aren't you at school Aidan????
