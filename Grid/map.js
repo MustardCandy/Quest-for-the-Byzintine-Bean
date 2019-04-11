@@ -20,8 +20,8 @@ function grid(number, element, name="#"){
 //draw creates the grid using characters and line breaks
 function draw(grid){
   var borderType = ""; //borderType
-  var gridLength = grid.length;//y length
-  var lengthGrid = grid[0].length;//x length
+  var gridLength = map.length;//y length
+  var lengthGrid = map[0].length;//x length
   borderType += "+"; //corner
   for (var i = 0; i < lengthGrid; i++) {
     borderType += "~~"; //border
@@ -31,7 +31,7 @@ function draw(grid){
   for (i = 0; i < gridLength; i++) {
     borderType += "|" //border
       for (j = 0; j < lengthGrid; j++) {
-        borderType += " " + grid[i][j]; //spaces
+        borderType += " " + map[i][j]; //spaces
       }
     borderType += "|" + "<br>"; //border and break
   }
