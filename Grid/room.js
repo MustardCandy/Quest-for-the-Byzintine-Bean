@@ -1,5 +1,5 @@
 //random number generator for room location on grid
-function room (map,roomz){
+function room (map,obj){
   var retArr = [];
   for (var i = roomz.yPos; i < roomz.y + roomz.yPos; i++) {
     for (var j = roomz.xPos; j < roomz.x + roomz.xPos; j++) {
@@ -24,9 +24,9 @@ function drawRoom (grid, room){
 
 //button reset
 //re-draws grid
-document.getElementById("button2").onclick = function(){
-  var rand = randNum(map);
-  var tst = room(map, rand);
-  drawRoom(map, tst);
-  document.getElementById("paragraph").innerHTML = draw(map);
-}
+// document.getElementById("button2").onclick = function(){
+//   var rand = randNum(map);
+//   var tst = room(map, rand);
+//   drawRoom(map, tst);
+//   document.getElementById("paragraph").innerHTML = draw(map);
+// }

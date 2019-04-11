@@ -2,6 +2,7 @@
   function randNum() {
     var num = Math.random() *100;
     var floor = Math.floor(num);
+
     return floor;
   }
 
@@ -16,12 +17,15 @@
 
   //function that turns the odd number into object to use in drawRoom (in room)
   function object() {
-    var rando = oddNum();
     var roomz = {
-      x: rand,
-      y: rand,
-      xPos: rand,
-      yPos: rand
+      x: oddNum(),
+      y: oddNum(),
+      xPos: oddNum(),
+      yPos: oddNum()
+    }
+    if (roomz.y > 50 && roomz.yPos > 50) {
+      roomz.y = oddNum();
+      roomz.yPos = oddNum();
     }
     return roomz;
   }
@@ -34,10 +38,9 @@
 
   //using button 2 to test the odd number generator
   document.getElementById("button2").onclick = function(){
-    randNum();
-    oddNum();
     var obj = object();
-    tst = room(map,obj);
+    room(map,obj);
+
     document.getElementById("paragraph").innerHTML = draw(map);
   }
 
