@@ -2,13 +2,14 @@
 function room (map){
   var roomz = object();
   var retArr = [];
-  for (var i = roomz.yPos; i < roomz.y + roomz.yPos; i++) {
-    for (var j = roomz.xPos; j < roomz.x + roomz.xPos; j++) {
+  for (var i = roomz.yPos; i < roomz.y + roomz.yPos; i++) {//ask lamorie why
+    for (var j = roomz.xPos; j < roomz.x + roomz.xPos; j++) {//rooms is undefined
       retArr.push([i,j]);
     }
   }
   return retArr;
 }
+console.log(roomz);
 
 //draws room on grid
 function drawRoom (grid, room){

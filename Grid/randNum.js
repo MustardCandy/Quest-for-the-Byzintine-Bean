@@ -23,12 +23,13 @@
       xPos: oddNum(),
       yPos: oddNum()
     }
-    if (roomz.y > 50 && roomz.yPos > 50) {
+    if (roomz.y > 50 && roomz.yPos > 50) { //ask lamorie about if statement
       roomz.y = oddNum();
       roomz.yPos = oddNum();
     }
     return roomz;
   }
+  console.log(object());
 
   //this function finds the midpoint of any given room
   function midPoint(roomz){
